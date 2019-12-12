@@ -1,0 +1,120 @@
+
+@import '../abstracts/variables.scss';
+/* Login page starts */
+.login-container {
+    height: 100vh;
+    width: 100%;
+}
+.login-bg {
+    background-image: url("/assets/images/login-background-images-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    animation: shrink 2s alternate;
+}
+
+.login-outer {
+    width: 900px;
+    height: 350px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-rgt {
+    padding: 5%;
+    background: $bg-login-rightspace;
+    height: 100%;
+    float: right;
+    h3{
+    text-align: center;
+    }
+}
+
+.login-input {
+    background: transparent;
+    border-radius: none;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-radius: inherit;
+    color: #000000d1;
+    font-size: 16px;
+}
+
+.login-lft {
+    background:$color-login-leftspace;
+    opacity: 0.9;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    float: left;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: $color-button-focus;
+}
+
+.logo-mobile-show {
+    display: none;
+    text-align: center;
+}
+
+
+.login-head{
+    color: black !important;
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+/* Login page Ends */
+
+input[type="text"].login-input::-webkit-input-placeholder,
+input[type="password"].login-input::-webkit-input-placeholder
+ {
+    color: black;
+  }
+
+@media screen and (max-width:984px) {
+    .login-outer {
+        padding-top: 30px;
+        width: 80%;
+        height: 444px;
+        opacity: 0.9;
+    }
+    .login-lft {
+        display: none;
+    }
+    .logo-mobile-show {
+        display: block;
+        img{
+            width: 68%;
+        }
+    }
+
+}
+
+
+@keyframes shrink {
+    0% {
+      background-size: 120% 120%;
+    }
+
+    100% {
+      background-size: 100% 100%;
+      -webkit-animation: zoomout 900s ease-in 1 ;
+
+    }
+  }

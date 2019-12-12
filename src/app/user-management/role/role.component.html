@@ -1,0 +1,152 @@
+
+<!-- content parts starts -->
+<div class="container-fluid page-wrapper">
+    <!-- page heading and page main tab starts -->
+
+    <div class="container-fluid heading-bg">
+        <div class="container">
+            <!-- <div class="page-heading-lft">
+                <h1>
+                    Page heading goes here
+                </h1>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Pictures</a>
+                    </li>
+                    <li>
+                        <a href="#">Summer 15</a>
+                    </li>
+                    <li>Italy</li>
+                </ul>
+            </div>
+            <div class="page-heading-rgt">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <!-- page heading and page main tab ends  -->
+
+    <!-- content part starts -->
+    <div class="container-fluid content-bg">
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-md-12 space-bottom">
+                    <div class="card">
+                        <div class="card-header custom-card-header">
+                            Create Project
+                        </div>
+                        <div class="card-body card-body-padding">
+                            <div>
+
+                                <div class="form-alignment">
+                                    <div class="row">
+                                        <div class="form-group col-md-3 pr-0">
+                                            <label>Flight Number</label>
+                                            <input class="form-control" [(ngModel)]="filghtObj.flightNumber" placeholder="Enter value" type="text" required>
+                                        </div>
+
+                                        <div class="form-group col-md-3 pr-0">
+                                            <label>Orgin</label>
+                                            <input class="form-control"  [(ngModel)]="filghtObj.origin" placeholder="Enter value"  type="text" >
+                                        </div>
+                                        <div class="form-group col-md-3 pr-0">
+                                            <label>Destination</label>
+                                            <input class="form-control" [(ngModel)]="filghtObj.destination" placeholder="Enter value" type="text" required>
+                                        </div>
+                                        <div class="form-group col-md-3 pr-0">
+                                            <label>Departure</label>
+                                            <input class="form-control"  [(ngModel)]="filghtObj.departure" placeholder="Enter value"  type="text" required>
+                                        </div>
+                                       </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+<!-- (flighnm||orgin&&destination||departure) -->
+
+                        <div class="card-footer custom-card-footer">
+                            <button type="button"  (click)="updateFilter()" class="btn save-button">Search</button>
+                            <button type="button" class="btn reset-button">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 equal-height">
+                  <div class="card">
+                      <div class="card-header custom-card-header">
+                          Manage List
+                      </div>
+                      <div class="card-body card-body-padding ">
+
+                          <table class="table card-table">
+                                                           <thead>
+                                  <tr>
+                                      <th scope="col">Flight Number </th>
+                                      <th scope="col">Carrier</th>
+                                      <th scope="col">Origin</th>
+                                      <th scope="col">Departure</th>
+                                      <th scope="col">Arrival</th>
+                                      <th scope="col">Destination</th>
+                                      <th scope="col">Aircraft</th>
+                                      <th scope="col">Distance</th>
+                                      <th scope="col">Travel time</th>
+                                      <th scope="col">Status</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr *ngIf="manageList.length==0">
+                                    <td colspan="10">No data avilable</td>
+                                </tr>
+                                  <tr *ngFor="let data of manageList  | paginate: { id: 'server', itemsPerPage: 10, currentPage: p, totalItems: total }">
+                                      <td>{{data.flightNumber}}</td>
+                                      <td>{{data.carrier}}</td>
+      <td>{{data.origin}}</td>
+      <td>{{data.departure | date: 'yyyy-MM-dd'}}</td>
+      <td>{{data.arrival}}</td>
+      <td>{{data.destination}}</td>
+      <td>{{data.aircraft}}</td>
+      <td>{{data.distance}}</td>
+      <td>{{data.travelTime}}</td>
+      <td>{{data.status}}</td>
+                                  </tr>
+
+
+                              </tbody>
+                          </table>
+                          <div class="card-footer custom-card-footer">
+                              <pagination-controls (pageChange)="p=$event" id="server"></pagination-controls>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- content part Ends -->
+
+
+</div>
+<!-- content parts Ends -->
+
+
+<!-- Footer starts -->
+
+<!-- Footer Ends -->

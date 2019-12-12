@@ -1,0 +1,31 @@
+  .card-table.table {
+    color: #47494cc9;
+    border: 1px solid #dee2e6;
+    }
+    .custom-card-header {
+      background-color: #2b2b2ac9 !important;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 16px; 
+      color: white;
+    }
+    .custom-card-footer {
+      text-align: right;
+      background: none !important;
+      border-top: none !important;
+    }      
+    .card-body-padding {
+      padding:16px !important;
+    }
+    .card-table.table thead th {    
+        color: #171716b0;
+        background: #9e9e9e14;
+    }
+    .card-table.table td,
+    .card-table.table th {
+      padding:7px 0px 7px 10px;    
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: rgb(245, 245, 245);
+    }

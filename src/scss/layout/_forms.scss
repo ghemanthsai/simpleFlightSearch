@@ -1,0 +1,25 @@
+.form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+.form-alignment  {
+    .form-control{
+        height:30px;
+        padding: 3px 10px 4px 10px;
+        border: 1px solid #ced4dabf;
+        border-radius: 1px;
+    }
+    .form-group{
+        margin-bottom: 10px;
+        label{
+            font-size: 12px;
+            margin-bottom: 5px !important;
+            text-transform: uppercase;
+            color: #565656;
+        }
+    }
+  
+  }

@@ -1,0 +1,16 @@
+
+    @import '../../scss/abstracts/variables.scss';
+    
+    .btnSubmit{
+        font-weight: 600;
+        color: $color-login-submit-button;
+        background-color: $bg-login-submit;
+        text-transform: uppercase;
+        padding: 15px !important;
+        margin-top:40px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 1.5%;
+        border: none;
+        cursor: pointer;
+    }

@@ -1,0 +1,41 @@
+<header>
+        <div class="custom-inner-header">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="logo-brand">
+                        <!-- <img src="assets/images/login_page_logo.png" /> -->
+                        <h1>Flight</h1>
+                    </div>
+                    <!-- Main menu starts -->
+
+
+                    <div class="main-menu-wrapper">
+                        <nav role='navigation' class="menu">
+                            <label for="menu">Menu
+                                <i class="fa fa-bars"></i>
+                            </label>
+                            <input type="checkbox" id="menu">
+
+                        </nav>
+
+
+
+                    </div>
+
+
+                    <!-- Main menu Ends -->
+                    <div class="header-more">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                              Admin
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- <a class="dropdown-item" href="#">Log out</a> -->
+                                <ng-content></ng-content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

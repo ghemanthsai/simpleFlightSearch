@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'abstracts/variables.scss';
+@import 'abstracts/functions.scss';
+@import 'abstracts/mixins';
+@import 'layout/header.scss';
+@import 'layout/breadcrum.scss';
+@import 'layout/footer.scss';
+@import 'layout/forms.scss';
+@import 'layout/tab.scss';
+@import 'layout/card.scss';
+@import 'components/buttons.scss';
+@import 'base/normalize.scss';
+
+/* General style starts */
+body{
+    font-family:$product-fontfamily;
+  }
+  .container {
+    width:100% !important;
+    max-width: 100% !important; 
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .page-wrapper {
+    padding:60px 0 5px 0 !important;
+  }    
+  /* General style ends */
+  
+  /* Common styles for all the pages starts */  
+  p span {
+    color:#999;
+    font-size:70%;
+  }
+  .wrapper {
+    width:960px;
+    max-width:98%;
+    margin:30px auto;
+  }  
+  .menu-wrapper {
+    float: left;
+    /* background: red; */
+    max-width: 70%;
+    width: 100%;
+    height: 56px;
+    margin-left: 35px;
+  }  
+  
+  .heading-bg {
+    background: #ffffff;
+    float: left;
+    border-bottom: 1px solid lightgray;
+    padding-top: 15px;
+  
+  }
+  .content-bg {
+    background: rgba(10, 27, 1, 0.0784313725490196);
+    min-height: 800px;
+    padding-top: 20px;
+    clear: both;
+  }
+  .page-heading-lft {
+    width: 30%;
+    float: left;
+    h1{
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 0;
+        font-weight: 600;
+        color: #113100;
+    }
+  }
+    
+  .page-heading-rgt {
+    position: relative;
+    width: 69%;
+    float: right;
+    text-align: right;
+    height: 48px;
+  }
+  
+  .equal-height {
+    display: grid;
+  }
+  
+  
+  /* inner page starts */
+  
+  /* Main menu starts*/
+  .main-menu-wrapper {
+      float: left;
+      margin-left: 38px;
+  }
+  
+  /* Main menu ends */
+  
+  .logo-brand {
+    float: left;  
+    padding: 5px 0;
+    font-size: 18px;
+    line-height: 20px;
+    width: 173px;
+  }
+  
+  .logo-brand img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .custom-inner-header{
+    background: #0a1b01 !important;
+    -webkit-box-shadow: 0px 9px 5px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 5px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 5px -9px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    height: 58px;
+    width: 100%;
+    z-index: 9;
+  }
+  
+  .inner-page {
+    padding: 80px 37px;
+  }  
+  /* Inner page Ends */
+  
+  /* Common styles for all the pages Ends  */
+  

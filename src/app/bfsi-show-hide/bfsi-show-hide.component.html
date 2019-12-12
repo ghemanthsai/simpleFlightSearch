@@ -1,0 +1,18 @@
+<ng-container [ngTemplateOutlet]="showHide?LoginTemplate:MainpageTemplate"></ng-container>
+<ng-template #LoginTemplate>
+    <app-authentication>
+     
+    </app-authentication>
+    <!-- <input type="submit" (click)="showHide=false" class="btnSubmit d-block" value="Login" /> -->
+</ng-template>
+
+<ng-template #MainpageTemplate>
+    <app-header>
+        <a class="dropdown-item" (click)="showHide=true">Log out</a>
+    </app-header>
+    <app-role></app-role>
+    <bfsi-footer></bfsi-footer>
+
+    <!-- <router-outlet>
+    </router-outlet> -->
+</ng-template>
